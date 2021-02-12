@@ -1,16 +1,21 @@
 import mongoose from "mongoose";
 
 const travelSchema = mongoose.Schema({
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: "User",
+  },
   title: {
     type: String,
-    required: true,
+    default: "Nowa wycieczka",
   },
   startingDate: {
-    type: String,
+    type: Date,
     required: true,
   },
   endingDate: {
-    type: String,
+    type: Date,
     required: true,
   },
   startingPlace: {
@@ -22,7 +27,7 @@ const travelSchema = mongoose.Schema({
     required: true,
   },
   attractions: {
-    type: Array,
+    type: String,
     required: false,
   },
   completed: {

@@ -1,0 +1,76 @@
+.home-page {
+  display: flex;
+  padding: 0 1rem;
+  height: 88vh;
+}
+
+.directions-form-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.transport-type-form,
+.route-form,
+.destination-form-buttons-container,
+.directions-calc-results,
+.dates-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.route-form div {
+  display: flex;
+  align-items: center;
+}
+
+.route-form div label {
+  margin-right: 0.5rem;
+}
+
+.route-form div * input {
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.destination-form-heading {
+  font-size: 2.25rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.destination-form-heading svg {
+  margin-left: 0.5rem;
+}
+
+.directions-calc-results {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.directions-calc-results svg {
+  margin-right: 0.5rem;
+}
+
+.directions-calc-results span {
+  display: flex;
+  align-items: center;
+}
+.destination-form-buttons-container {
+  margin-top: 5rem;
+}
+
+.dates-form div label {
+  margin-right: 0.5rem;
+}
+
+.save-travel-err {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: bolder;
+}

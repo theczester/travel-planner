@@ -1,13 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-btn {
+  transition: all 0.8s, border 0.1s;
+  background-color: white;
+  font-size: 1.5rem;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-top: 3rem;
+}
+
+.form-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.form-btn:active {
+  border: 5px;
+}
+
+.form-btn:disabled {
+  border: 3px solid #d3d3d3;
+  color: #d3d3d3;
+}
+
+.form-btn:disabled:hover {
+  background-color: inherit;
+  color: #d3d3d3;
+  cursor: inherit;
+}
+
+.form-btn:disabled:active {
+  border: 3px solid #d3d3d3;
+}
+
+.disabled {
+  border: 3px solid #d3d3d3;
+  color: #d3d3d3;
+}
+
+.disabled:hover {
+  background-color: inherit;
+  color: #d3d3d3;
+  cursor: inherit;
+}
+
+.disabled:active {
+  border: 3px solid #d3d3d3;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

@@ -1,0 +1,58 @@
+.profile-page {
+  padding: 2rem 15vw;
+}
+
+.profile-page h1 {
+  font-size: 3rem;
+}
+
+.profile-page input {
+  font-size: 1.5rem;
+}
+
+.profile-page input:disabled {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.header-and-edit {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 3rem 0 5rem 0;
+}
+
+.header-and-edit h1 {
+  margin-bottom: 1rem !important;
+  margin: 0;
+}
+
+.edit-delete-profile-toggler {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.edit-delete-profile-toggler div {
+  display: flex;
+  align-items: center;
+  transition: all 350ms;
+}
+
+.edit-delete-profile-toggler div:last-of-type {
+  margin-left: 3rem;
+}
+
+.edit-delete-profile-toggler div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.edit-delete-profile-toggler span {
+  margin-right: 0.5rem;
+}
+
+.profile-page label {
+  width: 6vw;
+}

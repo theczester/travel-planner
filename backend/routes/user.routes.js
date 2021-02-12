@@ -3,7 +3,9 @@ import {
   createUser,
   authUser,
   getUserProfile,
-  logoutUser,
+  authByToken,
+  updateUser,
+  deleteUser,
 } from "../controllers/user.controller.js";
 import protect from "../middleware/auth.middleware.js";
 
@@ -11,7 +13,8 @@ const router = express.Router();
 
 router.post("/create", createUser);
 router.post("/login", authUser);
-router.get("/profile", protect, getUserProfile);
-router.post("/logout", logoutUser);
+router.post("/auth", authByToken);
+router.route("/:id").put(protect, updateUser).delete(protect, deleteUser);
+router.post("/profile", protect, getUserProfile);
 
 export default router;

@@ -1,0 +1,82 @@
+.travels-page {
+  padding: 3rem 7rem;
+}
+
+.travels-page h1 {
+  margin-bottom: 3rem;
+  font-size: 2.25rem;
+}
+
+.travel {
+  transition: all 350ms;
+  width: 25vw;
+  padding: 1rem;
+  margin: 3rem 0;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.travel:hover {
+  transform: scale(1.05);
+}
+
+.travel svg:not(.connect-div-seperator) {
+  transition: all 0.2s;
+}
+
+.travel svg:not(.connect-div-seperator):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.travel-title {
+  font-size: 1.8rem;
+}
+
+.travel-place {
+  font-size: 1rem;
+}
+
+.travel input:not(.react-date-picker__inputGroup__input):disabled {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.travel-spaced-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel-connect-div {
+  text-align: center;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-completed-btn {
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  margin-left: 0.5rem;
+}
+
+.connect-div-seperator {
+  margin: 0 1rem;
+}
+
+.edit-mode-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.edit-mode-buttons svg:last-of-type {
+  margin-left: 1rem;
+}
